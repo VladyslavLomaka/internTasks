@@ -1,12 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hello World!</Text>
-      <StatusBar style='auto' />
-    </View>
+    <LinearGradient
+      style={styles.container}
+      colors={['blue', 'yellow', 'red']}
+      start={{ x: 0, y: 0 }}
+      end={{ x: 1, y: 1 }}
+    />
   );
 }
 
