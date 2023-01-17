@@ -1,10 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import TwitterPixel from './components/TwitterPixelSvg';
+import TwitterOriginal from './components/TwitterOriginalSvg';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello World!!</Text>
+      <TwitterOriginal
+        width={120}
+        height={40}
+        fill='black'
+        marginBottom={20}
+      />
+      <TwitterPixel
+        width={120}
+        height={40}
+        fill='blue'
+      />
       <StatusBar style='auto' />
     </View>
   );
